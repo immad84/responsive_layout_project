@@ -13,14 +13,22 @@ body {
 
 a { 
   color: #3a3a3a;
-	text-decoration: none;
+  text-decoration: none;
 }
 
 img {
   width: 100%;
-  padding: 10px;
+  /* padding: 100px; */
 }
 
+p {
+  /* padding: 10px; */
+  font-weight: 20px;
+}
+
+.title {
+  text-transform: capitalize;
+}
 
 /* ---- Layout Containers ---- */
 
@@ -30,26 +38,27 @@ img {
   text-align: center;
 }
 
+#portfolio {
+  background-color: white;
+}
+
 /* ---- Header ---- */
 
 .main-header {
   background: #f1f3f4;
+  /* background-color: lightgray; */
   padding: 1px;
 }
 
 .name {
     text-align: center;
-    margin-top: 10px;
-    margin-bottom: 0;
+    padding-top: 10px;
     text-transform: capitalize;
 }
 
-.title {
-  text-transform: capitalize;
-}
-
 .main-nav {
-  padding: 1em 0;
+  padding-top: 1em 0;
+  padding-bottom: 15px;
 }
 
 .main-nav li{
@@ -63,25 +72,64 @@ img {
 }
 
 .featured-img {
-  width: 80%;
-  height: 50%;
+  width: 75%;
+  /* padding-top: 25px;
+  padding-bottom: 40px; */
 }
+
+.introduction {
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: larger;
+  font-weight: lighter;
+}
+
+/* ---- Title ---- */
+
+.title {
+  text-transform: uppercase;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.project-title {
+  text-transform: capitalize;
+}
+
 
 /* ---- Footer ---- */
 
 .main-footer {
-	padding: 2em 0;
+	padding: 1.2em 0;
   background: #f1f3f4;
+  /* background-color: lightgray; */
 }
 
-.to-top {
-  float: right;
-  text-transform: uppercase;
+.footer {
+  border-top: solid lightgrey 1px;
+  padding-top: 15px;
+  margin-bottom: 1em;
+}
+
+.phone{
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.email {
+  display: inline-block;
+  margin-bottom: 50px;
 }
 
 .footer-name {
   float: left;
   text-transform: capitalize;
+  padding-left: 10px;
+}
+
+.to-top {
+  float: right;
+  text-transform: uppercase;
+  padding-right: 10px;
 }
 
 .secondary-nav {
@@ -89,37 +137,120 @@ img {
 }
 
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* ================================= 
   Media query
 ==================================== */
 
 @media (min-width: 768px) {
     .container {
-        width: 95%;
-        margin: 0 auto;
+      padding: 30px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    #portfolio {
+      background-color: white;
+    }
+
+    .name {
+      text-align: center;
+      text-transform: capitalize;
+  }
+
+    .main-nav li{
+      text-align: center;
+      text-transform: uppercase;
+      font-weight: bold;
+      background-color: #f1f3f4;
+      display: inline-block;
+    }
+
+    .featured-img {
+      width: 45%;
+      float: right;
+      margin-left: 10px;
+      margin-bottom: 30px;
     }
 
     .col {
-      width: 50%;
       float: left;
+      width: 50%;
+      height: 25em;
+      padding: 1em;
+    }
+
+    .phone{
+      display: block;
+      margin-bottom: 15px;
+    }
+    
+    .email {
+      display: block;
+      margin-bottom: 50px;
+    }
+
+    .to-top{
+      display: none;
+    }
+
+    .secondary-nav{
+      display: inline-block;
+      float: right;
+      padding-top: 25px;
+      padding-right: 10px;
+      word-spacing: 30px;
+      text-transform: uppercase;
+    }
+
+    .secondary-nav li {
+      display: inline-block;
+      font-weight: bold;
     }
 }
 
 @media (min-width: 1024px) {
+
+  body {
+    background-color: #f1f3f4;
+  }
+
+  #portfolio {
+    background-color: white;
+  }
+
   .container {
       width: 95%;
       margin: 0 auto;
+  }
+
+  .name {
+    float: left;
+  }
+
+  .main-nav{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #f1f3f4;
+    float: right;
+  }
+
+  .featured-img {
+    float: right;
+    padding: 15px;
   }
 
   .col {
     width: 33%;
     float: left;
   }
+}
+
+/* ---- clearfix ---- */
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
 }
 /* ---- Page Elements ---- */
