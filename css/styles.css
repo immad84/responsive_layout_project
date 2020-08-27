@@ -16,6 +16,14 @@ a {
   text-decoration: none;
 }
 
+a:active {
+  color: firebrick;
+}
+
+a:hover {
+  color: orange;
+}
+
 img {
   width: 100%;
   /* padding: 100px; */
@@ -50,6 +58,10 @@ p {
   padding: 1px;
 }
 
+.primary-nav {
+  background-color: #ef8354;
+}
+
 .name {
     text-align: center;
     padding-top: 10px;
@@ -69,6 +81,7 @@ p {
   padding: 15px;
   text-transform: uppercase;
   font-weight: bold;
+  border-radius: 5px;
 }
 
 .featured-img {
@@ -233,6 +246,7 @@ p {
     font-weight: bold;
     background-color: #f1f3f4;
     float: right;
+    padding-top: 25px;
   }
 
   .featured-img {
@@ -248,9 +262,5 @@ p {
 
 /* ---- clearfix ---- */
 
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 /* ---- Page Elements ---- */
