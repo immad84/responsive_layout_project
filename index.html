@@ -9,18 +9,21 @@
     <title>Immad's Portfolio</title>
 </head>
 <body> 
-    <header class="main-header clearfix" id="top">
+    <nav class="main-nav clearfix"  id="top">
         <section class="container clearfix">
-            <nav class="main-nav clearfix">
-                <h1 class="name">immad ud din</h1>
-                <ul>
-                    <li><a href="#top">home</a></li>
-                    <li><a href="#portfolio">portfolio</a></li>
-                    <li><a href="#contact">contact</a></li>
-                </ul>
-            </nav>
+            <h1 class="name">immad ud din</h1>
+            <ul>
+                <li><a href="#top">home</a></li>
+                <li><a href="#portfolio">portfolio</a></li>
+                <li><a href="#contact">contact</a></li>
+                <li><a href="#skills">skills</a></li>
+            </ul>
+        </section>
+    </nav>
+    <header class="main-header clearfix">
+        <section class="container clearfix">
             <img src="images/responsive-layout-profile.png" alt="profile image" class="featured-img">
-            <p class="introduction">Hi, I am a front-end web developer who loves responsive design and css.
+            <p class="introduction clearfix">Hi, I am a front-end web developer who loves responsive design and css.
             I recently finished a degree in front-end development at Treehouse and
             am excited to putt all my skills to use!</p>
         </section>
@@ -84,7 +87,7 @@
         </section>
 
         <section class="container clearfix">
-            <section class="card">
+            <section class="card" id="skills">
                 <h2>Skills</h2>
                 <p>I am a Frontend Developer. I got the programming skills in the following areas.</p>
                 <ul class="skills">
@@ -103,14 +106,15 @@
             <p class="desc">if you are interested in chatting or want more information about
             what I've been working on, I'd love to hear from you!</p>
             <span class="phone"> Phone &nbsp;&nbsp;<b>+46 (0)70-847-8916</b></span>
-            <span class="email">Email &nbsp;&nbsp;<b>immad.uddin84@gmail.com</b></span>
+            <span class="email">Email &nbsp;&nbsp;<b>immad.uddin84@gmail.com</b></s pan>
             <nav class="footer-nav clearfix">
                 <h3 class="name">immad ud din</h3>
                 <h3 class="to-top"><a href="#">back to top</a></h3>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#top">Home</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#skills">skills</a></li>
                 </ul>
             </nav>
         </section>
