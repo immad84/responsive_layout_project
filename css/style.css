@@ -23,12 +23,16 @@ a {
   display: block;
 }
 
-a:active {
-  color: firebrick;
-}
-
 a:hover {
   color: orange;
+}
+
+a:link {
+  color: #0399ff;
+}
+
+a:visited {
+  color: firebrick;
 }
 
 
@@ -113,7 +117,7 @@ Elements Style
     padding: 1px;
 }
 
-.main-header .name {
+.main-nav .name {
     font-size: 1.875em;
     margin-top: 0.2em;
 }
@@ -129,6 +133,7 @@ Elements Style
 .featured-img {
     width: 80%;
     margin-bottom: 1em;
+    margin-top: 2em;
 }
 
 .title {
@@ -193,10 +198,15 @@ ul.skills {
     width: 90%;
     margin: 0 auto;
     text-align: center;
+    max-width: 1000px;
+  }
+
+  .main-header {
+    height: 300px;
   }
 
   .featured-img {
-    width: 50%;
+    width: 40%;
     float: right;
     margin-left: 2em;
     margin-top: 1em;
