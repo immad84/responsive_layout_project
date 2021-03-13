@@ -1,4 +1,3 @@
-
 * {
   box-sizing: border-box;
 }
@@ -15,7 +14,7 @@ p,
 a,
 li {
   font-family: 'Montserrat', sans-serif;
-}  
+}
 
 a {
   color: black;
@@ -35,12 +34,11 @@ a:visited {
   color: firebrick;
 }
 
-
 li {
   /* font-weight: bold; */
-  font-size: .8em;
+  font-size: 0.8em;
   text-transform: uppercase;
-  letter-spacing: .5px;
+  letter-spacing: 0.5px;
 }
 
 ul {
@@ -49,63 +47,7 @@ ul {
 }
 
 img {
-    width: 100%;
-}
-
-/* ================================= 
-Layout Containers
-==================================== */
-
-.container {
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.content-area {
-  background-color: white;
-}
-
-/* ================================= 
-Naviation Styles
-==================================== */
-
-.main-nav {
-  background-color: #BFADA3;
-  padding-top: 1px;
-}
-
-.main-nav li {
-    background-color: #fff;
-    margin-bottom: 5px;
-    padding: 15px;
-}
-
-.main-nav ul {
-    margin-bottom: 2em;
-}
-
-.project-title {
-    text-transform: capitalize;
-    font-size: 1em;
-}
-
-.discription {
-  font-family: 'Baloo Tamma 2', cursive;
-}
-
-.footer-nav ul{
-    display: none;
-}
-
-.to-top {
-    font-size: 1em;
-    float: right;
-}
-
-.footer-nav {
-    margin-top: 2em;
-    border-top: 1px solid lightgray;
+  width: 100%;
 }
 
 /* ================================= 
@@ -113,51 +55,47 @@ Elements Style
 ==================================== */
 
 .name {
-    text-transform: capitalize;
-    padding: 1px;
-}
-
-.main-nav .name {
-    font-size: 1.875em;
-    margin-top: 0.2em;
+  text-transform: capitalize;
+  padding: 1px;
+  font-size: 1.875em;
+  margin-top: 0.2em;
 }
 
 .introduction {
-  color: #D6718D;
+  color: #d6718d;
   font-style: italic;
-  letter-spacing: .01em;
+  letter-spacing: 0.01em;
   font-family: 'Baloo Tamma 2', cursive;
   padding: 1em;
 }
 
 .featured-img {
-    width: 80%;
-    margin-bottom: 1em;
-    margin-top: 2em;
+  width: 80%;
+  margin-bottom: 1em;
+  margin-top: 2em;
 }
 
 .title {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    padding: 1em 0;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  letter-spacing: 0.1em;
+  padding: 1em 0;
 }
 
 .contact {
-    text-transform: uppercase;
-    padding: 1em 0;
+  text-transform: uppercase;
+  padding: 1em 0;
 }
 
 span {
-    display: block;
-    font-size: .9em;
-    margin-top: 2em;
+  display: block;
+  font-size: 0.9em;
+  margin-top: 2em;
 }
 
-.footer-nav .name
-{
-    font-size: 1em;
-    float: left;
+.footer-nav .name {
+  font-size: 1em;
+  float: left;
 }
 
 .card {
@@ -187,13 +125,67 @@ ul.skills {
   border-color: #ff99ff;
 }
 
+/* ================================= 
+Layout Containers
+==================================== */
+
+.container {
+  text-align: center;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.content-area {
+  background-color: white;
+}
+
+/* ================================= 
+Naviation Styles
+==================================== */
+
+.main-nav {
+  background-color: #bfada3;
+  padding-top: 1px;
+}
+
+.main-nav ul {
+  margin-bottom: 2em;
+}
+
+.main-nav li {
+  background-color: #fff;
+  margin-bottom: 5px;
+  padding: 15px;
+}
+
+.project-title {
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.discription {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+.footer-nav ul {
+  display: none;
+}
+
+.to-top {
+  font-size: 1em;
+  float: right;
+}
+
+.footer-nav {
+  margin-top: 2em;
+  border-top: 1px solid lightgray;
+}
 
 /* ================================= 
   Media query
 ==================================== */
 
 @media (min-width: 768px) {
-  
   .container {
     width: 90%;
     margin: 0 auto;
@@ -214,11 +206,10 @@ ul.skills {
   }
 
   .main-nav li {
-    background-color:#BFADA3;
+    background-color: #bfada3;
     display: inline-block;
     font-weight: bold;
   }
-
 
   .introduction {
     margin: 3em 0;
@@ -236,6 +227,7 @@ ul.skills {
 
   .col {
     float: left;
+    height: 25%;
     padding-right: 1em;
     padding-left: 1em;
   }
@@ -260,13 +252,10 @@ ul.skills {
 ==================================== */
 
 @media (min-width: 1024px) {
-
-  
   .content-area {
     margin-right: 2em;
     margin-left: 2em;
   }
-
 
   .main-nav .name {
     padding: 15px;
@@ -286,7 +275,7 @@ ul.skills {
   .travel-app,
   .fav-spots,
   .photo-gallery,
-  .calculator{
+  .calculator {
     max-width: 33%;
   }
 
@@ -301,13 +290,7 @@ ul.skills {
 /* ---- clearfix ---- */
 
 .clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-
-
-
-
-
+  content: '';
+  display: table;
+  clear: both;
+}
