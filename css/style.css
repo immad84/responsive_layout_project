@@ -1,28 +1,3 @@
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #f1f3f4;
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-p,
-a,
-li {
-  font-family: 'Montserrat', sans-serif;
-}  
-
-a {
-  color: black;
-  text-decoration: none;
-  display: block;
-}
-
 a:hover {
   color: orange;
 }
@@ -32,160 +7,57 @@ a:link {
 }
 
 a:visited {
-  color: firebrick;
+  /* color: firebrick; */
 }
 
-
-li {
-  /* font-weight: bold; */
-  font-size: .8em;
-  text-transform: uppercase;
-  letter-spacing: .5px;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-img {
-    width: 100%;
-}
-
-/* ================================= 
-Layout Containers
-==================================== */
-
-.container {
-  text-align: center;
-  padding-left: 1em;
-  padding-right: 1em;
-}
-
-.content-area {
-  background-color: white;
-}
-
-/* ================================= 
-Naviation Styles
-==================================== */
-
-.main-nav {
-  background-color: #BFADA3;
-  padding-top: 1px;
-}
-
-.main-nav li {
-    background-color: #fff;
-    margin-bottom: 5px;
-    padding: 15px;
-}
-
-.main-nav ul {
-    margin-bottom: 2em;
-}
-
-.project-title {
-    text-transform: capitalize;
-    font-size: 1em;
-}
-
-.discription {
-  font-family: 'Baloo Tamma 2', cursive;
-}
-
-.footer-nav ul{
-    display: none;
-}
-
-.to-top {
-    font-size: 1em;
-    float: right;
-}
-
-.footer-nav {
-    margin-top: 2em;
-    border-top: 1px solid lightgray;
+section {
+  padding-top: 2.5em;
 }
 
 /* ================================= 
 Elements Style
 ==================================== */
 
-.name {
-    text-transform: capitalize;
-    padding: 1px;
-}
+/* .active {
+  background-color: #4caf50;
+  color: white;
+} */
 
-.main-nav .name {
-    font-size: 1.875em;
-    margin-top: 0.2em;
-}
-
-.introduction {
-  color: #D6718D;
-  font-style: italic;
-  letter-spacing: .01em;
-  font-family: 'Baloo Tamma 2', cursive;
-  padding: 1em;
-}
-
-.featured-img {
-    width: 80%;
-    margin-bottom: 1em;
-    margin-top: 2em;
-}
-
-.title {
-    text-transform: uppercase;
-    font-size: 1.2em;
-    letter-spacing: .1em;
-    padding: 1em 0;
-}
+/* .featured-img {
+  width: 80%;
+  margin-bottom: 1em;
+  margin-top: 2em;
+} */
 
 .contact {
-    text-transform: uppercase;
-    padding: 1em 0;
+  text-transform: uppercase;
+  padding: 1em 0;
 }
 
-span {
-    display: block;
-    font-size: .9em;
-    margin-top: 2em;
-}
 
-.footer-nav .name
-{
-    font-size: 1em;
-    float: left;
-}
 
 .card {
   text-align: center;
   background: #fff;
 }
 
-ul.skills {
-  padding-top: 1em;
-  text-align: center;
-}
-
-.skills li {
-  border-radius: 6px;
-  display: inline-block;
-  background: #ff9904;
-  color: white;
-  padding: 5px 10px;
-  margin: 2px;
-}
-
-.skills li:nth-child(odd) {
-  background: #0399ff;
-}
-
 .card:hover {
   border-color: #ff99ff;
 }
+
+.project-title {
+  text-transform: capitalize;
+  font-size: 1em;
+}
+
+.discription {
+  font-family: 'Baloo Tamma 2', cursive;
+}
+
+
+
+
+
 
 
 /* ================================= 
@@ -193,7 +65,6 @@ ul.skills {
 ==================================== */
 
 @media (min-width: 768px) {
-  
   .container {
     width: 90%;
     margin: 0 auto;
@@ -213,46 +84,24 @@ ul.skills {
     padding-bottom: 3em;
   }
 
-  .main-nav li {
-    background-color:#BFADA3;
-    display: inline-block;
-    font-weight: bold;
-  }
 
 
   .introduction {
     margin: 3em 0;
   }
 
-  .marketing-page,
-  .search-page,
-  .travel-app,
-  .fav-spots,
-  .photo-gallery,
-  .calculator {
-    width: 50%;
-    height: 50vh;
-  }
+
 
   .col {
     float: left;
+    height: 25%;
     padding-right: 1em;
     padding-left: 1em;
   }
 
-  .to-top {
-    display: none;
-  }
 
-  .footer-nav ul {
-    display: inline-block;
-    float: right;
-  }
 
-  .footer-nav li {
-    float: left;
-    padding-right: 20px;
-  }
+
 }
 
 /* ================================= 
@@ -260,13 +109,10 @@ ul.skills {
 ==================================== */
 
 @media (min-width: 1024px) {
-
-  
   .content-area {
     margin-right: 2em;
     margin-left: 2em;
   }
-
 
   .main-nav .name {
     padding: 15px;
@@ -286,7 +132,7 @@ ul.skills {
   .travel-app,
   .fav-spots,
   .photo-gallery,
-  .calculator{
+  .calculator {
     max-width: 33%;
   }
 
@@ -298,15 +144,53 @@ ul.skills {
   }
 }
 
-/* ---- clearfix ---- */
-
-.clearfix::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
 
 
+/* ================================= 
+Layout Containers
+==================================== */
+
+/* ================================= 
+Naviation Styles
+==================================== */
+
+/* ----- Nav Element Styles ----- */
+
+/* a.icon {
+  background-color: #bfada3;
+  width: 1.5em;
+  color: #000;
+  font-size: 2em;
+  display: block;
+  position: fixed;
+  right: 0.2em;
+  top: 0;
+}
+
+a.home {
+  background-color: #bfada3;
+  width: 1.5em;
+  color: #000;
+  font-size: 2em;
+  display: block;
+  position: fixed;
+  left: 0.2em;
+  top: 0;
+} */
+
+/* ================================= 
+Header Styles
+==================================== */
+
+/* ----- Header Element Styles ----- */
+
+
+
+
+
+/* .skills li:nth-child(odd) {
+  background: #0399ff;
+} */
 
 
 
